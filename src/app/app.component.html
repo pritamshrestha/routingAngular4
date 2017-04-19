@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+ <div class="row">
+  <div class="col-md-12">
+  <nav>
+   <a routerLink="/departments" routerLinkActive="active">Departments</a>
+   <a routerLink="/employees">Employees</a>
+  </nav>
+  <router-outlet></router-outlet>
+  </div>
+ </div>
+</div>
+<div class="container">
+ <div class="row">
+  <div class="col-md-12 text-success" id="one">
+   <router-outlet></router-outlet>
+  </div>
+ </div>
+</div>
